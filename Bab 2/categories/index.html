@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/icon.png" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #706e68;
+        }
+
+        .jumbotron {
+            background-color: #56585a;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .jumbotron img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-getStarted {
+            background-color: #3f3c37;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-getStarted:hover {
+            background-color: #4b4a46;
+        }
+
+        .cards-categories {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .card-categories {
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .card-categories img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="download.png" alt="" />
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="login.html" class="btn_login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="jumbotron">
+                <h1>Ayo Gunakan Pelayanan Pengiriman Motor Terpercaya Hanya Di RadjaMotor</h1>
+                <img src="" alt="" />
+                <button type="button" class="btn-getStarted">Get Started</button>
+            </div>
+            <div class="cards-categories">
+                <div class="card-categories">
+                    <img src="icons8-truck-52.png" alt="" />
+                    <h2>Cepat</h2>
+                    <p>Cepat Dalam Pengiriman</p>
+                </div>
+                <div class="card-categories">
+                    <img src="icons8-box-50.png" alt="" />
+                    <h2>Tepat</h2>
+                    <p>Tepat dalam pengantaran</p>
+                </div>
+                <div class="card-categories">
+                    <img src="icons8-money-60.png" alt="" />
+                    <h2>Hemat</h2>
+                    <p>Biaya Pelayanan Yang Terjangkau</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h4>&copy; RadjaMotor</h4>
+        </footer>
+    </div>
+</body>
+</html>

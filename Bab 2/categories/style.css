@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #f0f0f0;
+}
+
+nav {
+	display: flex;
+	height: 60px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: #333;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 10px 15px;
+	transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+	color: #333;
+}
+
+.btn_login {
+	background-color: #333;
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	margin-top: 20px;
+}
+
+.btn_login:hover {
+	background-color: #333;
+}
+
+.jumbotron {
+	background-color: #8e9297;
+	color: #fff;
+	padding: 50px 20px;
+	text-align: center;
+}
+
+.jumbotron button {
+	padding: 12px 24px;
+	border: none;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.jumbotron button:hover {
+	background-color: #333;
+}
+
+.cards-categories {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.card-categories {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin: 10px;
+}
+
+.card-categories h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.card {
+	margin-bottom: 20px;
+}
+
+.card h5 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.card p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+footer {
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
