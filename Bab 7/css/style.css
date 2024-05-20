@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Raleway", Verdana; /* Mengubah font utama */
+	background-color: #575451; /* Warna latar belakang */
+}
+
+.container {
+	width: 90%; /* Mengurangi lebar container */
+	margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+	display: flex;
+	height: 80px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #746e6c; /* Warna latar belakang */
+	padding: 0 20px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #efe5e5;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 8px 15px;
+	transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+	color: #aba79c; /* Warna teks saat hover */
+}
+
+nav .menu-btn i {
+	color: #e7d8d8;
+	font-size: 22px;
+	cursor: pointer;
+	display: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+/* Button Login */
+.btn_login {
+	background-color: #4a4842;
+	width: 120px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	color: #e4dbdb;
+	font-weight: 500;
+	transition: background-color 0.3s ease;
+}
+
+.btn_login:hover {
+	background-color: #838075; /* Warna latar belakang saat hover */
+}
+
+/* Jumbotron */
+.walpaper {
+	display: flex;
+	background-color: #aca9a3;
+	border-radius: 20px;
+	padding: 20px;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.walpapaer-text {
+	width: 40%;
+	color: #7c7771; /* Warna teks */
+}
+
+.walpaper-text h1 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.walpaper-text p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.walpaper-text button {
+	padding: 10px 18px;
+	border: none;
+	border-radius: 10px;
+	background-color: #3b332b; /* Warna latar belakang tombol */
+	color: #e2ddd3; /* Warna teks tombol */
+	cursor: pointer;
+	font-weight: 500;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.walpaper-text button:hover {
+	background-color: #9a9792; /* Warna latar belakang saat hover */
+	color: #fff; /* Warna teks saat hover */
+}
+
+/* Card Categories */
+.cards-categories {
+	display: grid; /* Mengubah tata letak menjadi grid */
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengatur lebar item */
+	gap: 20px;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: #fefefe;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(211, 207, 207, 0.2);
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 15px 15px 0 0;
+}
+
+.card-content {
+	padding: 20px;
+}
+
+.card-content h5 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #0b0906; /* Warna teks judul */
+	margin-bottom: 10px;
+}
+
+.card-content p {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+.card-content .price {
+	font-size: 16px;
+	font-weight: bold;
+	color: #070605; /* Warna teks harga */
+	margin-bottom: 15px;
+}
+
+.card-content .btn_belanja {
+	background-color: #32312e;
+	padding: 10px 20px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	transition: background-color 0.3s ease;
+}
+
+.card-content .btn_belanja:hover {
+	background-color: #1e1e1d; /* Warna latar belakang saat hover */
+}
+
+/* Footer */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	background-color: #c0bbb7; /* Warna latar belakang */
+	padding: 20px;
+	color: #fff;
+	font-weight: 500;
+}
+
+/* Form Login */
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.form-login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 40%;
+	background-color: #fff;
+	padding: 30px;
+	margin: 0 auto;
+	box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.input {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
+.link-register {
+	text-decoration: none;
+	margin-top: 10px;
+	color: #c1bebc; /* Warna teks */
+	font-weight: 500;
+}
